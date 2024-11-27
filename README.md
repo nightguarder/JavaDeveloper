@@ -1,32 +1,11 @@
 # Java Developer
-Public Repository to store all my projects and homeworks from RobotDreams course course mentored by Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs or working at various projects for The National Archives UK.
-## Obsah kurzu
-
-- [Java Developer](#java-developer)
-  - [Obsah kurzu](#obsah-kurzu)
-  - [1. Lekce: Úvod a instalace Javy](#1-lekce-úvod-a-instalace-javy)
-  - [2. Lekce: Základy Gitu](#2-lekce-základy-gitu)
-  - [3. Lekce: Primitivní datové typy](#3-lekce-primitivní-datové-typy)
-  - [4. Lekce: Operátory a podmínky](#4-lekce-operátory-a-podmínky)
-  - [5. Lekce: Metody a organizace kódu](#5-lekce-metody-a-organizace-kódu)
-  - [6. Lekce: Řízení toku programu](#6-lekce-řízení-toku-programu)
-  - [7. Lekce: Úvod do polí (Arrays)](#7-lekce-úvod-do-polí-arrays)
-  - [8. Lekce: OOP – objekty a struktura](#8-lekce-oop--objekty-a-struktura)
-  - [9. Lekce: OOP – dědičnost](#9-lekce-oop--dědičnost)
-  - [10. Lekce: Polymorfismus a zapouzdření v OOP](#10-lekce-polymorfismus-a-zapouzdření-v-oop)
-  - [11. Lekce: Kolekce v Javě – List, Map, Set](#11-lekce-kolekce-v-javě--list-map-set)
-  - [12. Lekce: Co jsou generika](#12-lekce-co-jsou-generika)
-  - [13. Lekce: Live Coding – opakování a QA session](#13-lekce-live-coding--opakování-a-qa-session)
-  - [14. Lekce: Výjimky](#14-lekce-výjimky)
-  - [15. Lekce: Stream API a kolekce v Javě](#15-lekce-stream-api-a-kolekce-v-javě)
-  - [16. Lekce: Funkcionální rozhraní v Javě](#16-lekce-funkcionální-rozhraní-v-javě)
-  - [17. Lekce: Vstupně výstupní operace v Javě](#17-lekce-vstupně-výstupní-operace-v-javě)
-  - [18. Lekce: Concurrency – Vlákna a multivláknové programování](#18-lekce-concurrency--vlákna-a-multivláknové-programování)
-  - [19. Lekce: Unitní psaní testů v Javě](#19-lekce-unitní-psaní-testů-v-javě)
-  - [20. Lekce: Návrhové vzory](#20-lekce-návrhové-vzory)
-  - [21. Lekce: Q\&A a diskuze o potenciálu Javy a pracovním trhu](#21-lekce-qa-a-diskuze-o-potenciálu-javy-a-pracovním-trhu)
+- Public Repository to store all my projects and homeworks from RobotDreams course course mentored by Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs or working at various projects for The National Archives UK.
 
 ---
+—> [Robot Dreams course info](https://robotdreams.cz/course/103-java-developer)
+
+![Course Image](/javadeveloper.png)
+
 
 ## 1. Lekce: Úvod a instalace Javy
 
