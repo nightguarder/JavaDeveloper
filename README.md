@@ -1,5 +1,5 @@
 # Java Developer
-Public Repository to store all my projects and homeworks from RobotDreams course course mentored by Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs.
+Public Repository to store all my projects and homeworks from RobotDreams course course mentored by Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs or working at various projects for The National Archives UK.
 ## Obsah kurzu
 
 - [Java Developer](#java-developer)
@@ -50,6 +50,8 @@ Public Repository to store all my projects and homeworks from RobotDreams course
 - Přístup na GitHub a schopnost s ním pracovat.
 - Základní porozumění Apache Maven.
 
+**Notes:**
+- [GIT konfigurace](/Notes/Git.md)
 ---
 
 ## 3. Lekce: Primitivní datové typy
