@@ -50,6 +50,7 @@
 **Výstupy:**
 - Znalost základů Gitu a jeho příkazů.
 - Přístup na GitHub a schopnost s ním pracovat.
+- Commits are now signed
 - Základní porozumění Apache Maven.
 
 **Notes:**
