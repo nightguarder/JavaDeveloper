@@ -1,5 +1,5 @@
 # Java Developer
-- Public Repository to store all my projects and homeworks from RobotDreams course course mentored by Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs or working at various projects for The National Archives UK.
+- This course is mentored by a Senior SW Developer Radek Hübner, who has 19 years of experience in software engineering lead and java development at company HM Revenue & Customs or working at various projects for The National Archives UK.
 
 ---
 —> [Robot Dreams course info](https://robotdreams.cz/course/103-java-developer)
