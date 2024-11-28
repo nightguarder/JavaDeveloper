@@ -53,7 +53,7 @@
 - Základní porozumění Apache Maven.
 
 **Notes:**
-- [GIT konfigurace](/Notes/Git.md)
+- [GIT konfigurace](./Notes/Git.md)
 ---
 
 ## 3. Lekce: Primitivní datové typy
