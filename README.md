@@ -55,6 +55,11 @@
 
 **Notes:**
 - [GIT konfigurace](./Notes/Git.md)
+- [Generate gitignore](https://www.toptal.com/developers/gitignore)
+
+**Úkoly**
+- Udělat z HelloWorld git repozitář a nahrát na GitHub.
+- *Bonus:* Nastudovat si z dokumentace .gitignore a nastavit gitignore pro Java projekt.
 ---
 
 ## 3. Lekce: Primitivní datové typy
