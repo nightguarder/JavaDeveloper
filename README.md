@@ -38,7 +38,7 @@
 
 **Výstupy:**
 - Budeš umět nainstalovat JDK a IntelliJ IDEA na svůj systém, spustit program "Hello World" a popsat základní principy Javy.
-- [Lekce 1 Hello World](/Lekce/Lekce1/HelloWorld/src/App.java)
+- [Lekce 1 Hello World](/Lekce/Lekce1/HelloWorld/README.md)
 ---
 
 ## 2. Lekce: Základy Gitu
@@ -52,7 +52,7 @@
 - Přístup na GitHub a schopnost s ním pracovat.
 - Commits are now signed
 - Základní porozumění Apache Maven.
-- [Lekce 2 Hello Git](/Lekce/Lekce2/HelloGit/src/HelloGit.java)
+- [Lekce 2 Repository](/Lekce/Lekce2/HelloGit/README.md)
 **Notes:**
 - [GIT konfigurace](./Notes/Git.md)
 - [Generate gitignore](https://www.toptal.com/developers/gitignore)
@@ -70,7 +70,7 @@
 
 **Výstupy:**
 - Budeš rozumět primitivním datovým typům v Javě a umět je používat v různých situacích.
-- [Lekce 3 Operands](/Lekce/Lekce3/Operands/bin/Operands.class)
+- [Lekce 3 Repository](/Lekce/Lekce3/Operands/README.md)
 ---
 
 ## 4. Lekce: Operátory a podmínky
@@ -81,7 +81,7 @@
 
 **Výstupy:**
 - Umíš použít logické operátory, rozeznáš rozdíl mezi porovnáváním a přiřazením, a ovládáš bitové operace.
-- [Lekce 4 Operators](/Lekce/Lekce4/BooleanAlgebra/src/BooleanAlgebra.java)
+- [Lekce 4 Repository](/Lekce/Lekce4/BMICalculator/README.md)
 **Úkoly:**
 - Naprogramujte BMI kalkulačku.
 - Jelikož zatím neumíme načítat hodnoty zadávané uživatelem, nadefinujte v programu proměnné pro váhu a výšku a otestujte s různými hodnotami.
@@ -98,7 +98,7 @@
 
 **Výstupy:**
 - Umíš efektivně organizovat kód do metod a řešit problém krok za krokem. Naučíš se také hledat duplicity a přesouvat je do metod.
-- [Lekce 5 Methods](/Lekce/Lekce5/Methods/src/Methods.java)
+- [Lekce 5 Repository](/Lekce/Lekce5/Methods/README.md)
 
 **Úkoly:**
 - Naprogramujte metody na vypočet obsahu a obvodu
