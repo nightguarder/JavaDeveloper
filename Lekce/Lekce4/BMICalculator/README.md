@@ -3,10 +3,10 @@
 
 ### Verze 1 - Easy
 - Pouze kalkulačka
-= [BMICalc](/src/BMIcalc.java)
+= [BMICalc](/Lekce/Lekce4/BMICalculator/src/BMICalc.java)
 ### Verze 2 - Hard
 - Kalkulačka na základě inputu od usera
-= [BMIUser](/src/BMIUser.java)
+= [BMIUser](/Lekce/Lekce4/BMICalculator/src/BMIUser.java)
 
 ## Úkol
 - Jelikož zatím neumíme načítat hodnoty zadávané uživatelem, nadefinujte v programu proměnné pro váhu a výšku a otestujte s různými hodnotami.
