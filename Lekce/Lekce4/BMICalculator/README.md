@@ -1,4 +1,4 @@
-## Kalkulacka BMI
+## Lekce 4
 - Naprogramujte jednoduchou BMI kalkulačku
 
 ### Verze 1 - Easy
