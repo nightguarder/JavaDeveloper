@@ -82,6 +82,7 @@
 **Výstupy:**
 - Umíš použít logické operátory, rozeznáš rozdíl mezi porovnáváním a přiřazením, a ovládáš bitové operace.
 - [Lekce 4 Repository](/Lekce/Lekce4/BMICalculator/README.md)
+
 **Úkoly:**
 - Naprogramujte BMI kalkulačku.
 - Jelikož zatím neumíme načítat hodnoty zadávané uživatelem, nadefinujte v programu proměnné pro váhu a výšku a otestujte s různými hodnotami.
