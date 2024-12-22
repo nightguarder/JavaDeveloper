@@ -1,6 +1,5 @@
 public class BMI {
     private String name;
-    private int age;
     private double weight;
     private double height;
 
@@ -19,14 +18,14 @@ public class BMI {
             throw new IllegalArgumentException("Výška nesmi byt záporná");
         }
         this.name = name;
-        this.age = age;
         this.weight = weight;
         this.height = height;
     }
     
     //Vypocet BMI
+    //TODO: Round to 2 decimal places
     public double calculateBMI() {
-        return weight / (height * height); //POZOR vraci double
+        return weight / (height * height);
     }
 //Kategorie BMI
     public static String kategorie(double bmi) {
@@ -52,7 +51,8 @@ public class BMI {
         System.out.println("Kalkulačka Vašeho BMI");
         BMI bmi = new BMI("Chris", 25, 63, 1.77); //Vytvoreni instance tridy BMI
         System.out.println(bmi.name + " Vaše bmi je " + bmi.calculateBMI());
-
-        kategorie(bmi.calculateBMI()); //Vypis kategorie - musi byt static
+        
+        String bmikategorie = kategorie(bmi.calculateBMI());
+        System.out.println(bmikategorie);
     }
 }
