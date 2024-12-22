@@ -82,6 +82,11 @@
 **Výstupy:**
 - Umíš použít logické operátory, rozeznáš rozdíl mezi porovnáváním a přiřazením, a ovládáš bitové operace.
 
+**Úkoly:**
+- Naprogramujte BMI kalkulačku.
+- Jelikož zatím neumíme načítat hodnoty zadávané uživatelem, nadefinujte v programu proměnné pro váhu a výšku a otestujte s různými hodnotami.
+- Proveďte výpočet BMI podle vzorce z [wikipedie](https://cs.wikipedia.org/wiki/Index_t%C4%9Blesn%C3%A9_hmotnosti)
+
 ---
 
 ## 5. Lekce: Metody a organizace kódu
@@ -93,6 +98,11 @@
 
 **Výstupy:**
 - Umíš efektivně organizovat kód do metod a řešit problém krok za krokem. Naučíš se také hledat duplicity a přesouvat je do metod.
+
+**Úkoly:**
+- Naprogramujte metody na vypočet obsahu a obvodu
+- S pomoci rekurzivní metody naprogramujte metodu na výpočet Fibonacciho posloupnosti.
+- *Bonus:* S pomocí dokumentace Java API a Google si najděte jak použít konstantu PI ktera se nachazi ve standartní kniovně v Javě. Hledejte třídu Math. https://docs.oracle.com/en/java/javase/17/docs/api/
 
 ---
 
