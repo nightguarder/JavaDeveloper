@@ -23,9 +23,10 @@ public class BMI {
     }
     
     //Vypocet BMI
-    //TODO: Round to 2 decimal places
+    
     public double calculateBMI() {
-        return weight / (height * height);
+        double bmi = weight / (height * height);
+        return Math.round(bmi * 100.0) / 100.0; //Zaokrouhleni na 2 desetinna mista
     }
 //Kategorie BMI
     public static String kategorie(double bmi) {
