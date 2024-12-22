@@ -1,5 +1,6 @@
-public class BMI {
+public class BMICalc {
     private String name;
+    private int age;
     private double weight;
     private double height;
 
@@ -7,7 +8,7 @@ public class BMI {
     //Vyska nesmi byt mensi nez 0
     //Vaha nesmi byt mensi nez 0
     //Vek nesmi byt mensi nez 0 
-    public BMI(String name, int age, double weight, double height) {
+    public BMICalc(String name, int age, double weight, double height) {
         if (age < 0) {
             throw new IllegalArgumentException("Věk nemůže být 0");
         }
@@ -18,8 +19,16 @@ public class BMI {
             throw new IllegalArgumentException("Výška nesmi byt záporná");
         }
         this.name = name;
+        this.age = age;
         this.weight = weight;
         this.height = height;
+    }
+    public int getAge() {
+        return age;
+    }
+    //Public metoda pro ziskani jmena
+    public String getName() {
+        return name;
     }
     
     //Vypocet BMI
@@ -50,7 +59,7 @@ public class BMI {
 
     public static void main(String[] args) throws Exception {
         System.out.println("Kalkulačka Vašeho BMI");
-        BMI bmi = new BMI("Chris", 25, 63, 1.77); //Vytvoreni instance tridy BMI
+        BMICalc bmi = new BMICalc("Chris", 25, 63.5, 1.77); //Vytvoreni instance tridy BMI
         System.out.println(bmi.name + " Vaše bmi je " + bmi.calculateBMI());
         
         String bmikategorie = kategorie(bmi.calculateBMI());
