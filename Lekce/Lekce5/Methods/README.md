@@ -1,18 +1,17 @@
-## Getting Started
+## Lekce 5
+- Metody, Rekurzivní metody, **Přetížené metody**
+## Úkoly
+### Obsah obvod
+= **[ObsahObvod](/Lekce/Lekce5/Methods/src/ObsahObvod.java)**
+- Naprogramujte metody na vypočet obsahu a obvodu
+    - Kruhu
+    - Obdelníku.
+- Zvolte správné datové typy a minimalně jednou implementujte přetíženou metodu.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+### Fibonacciho posloupnost
+1. Easy --> [FibonacciSequence](/Lekce/Lekce5/Methods/src/Fibonacci.java)
+2. Hard s pamětí --> [FibonacciSequence](/Lekce/Lekce5/Methods/src/Fibonacci.java)
+- S pomoci rekurzivní metody naprogramujte metodu na výpočet Fibonacciho posloupnosti.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- *Bonus:* S pomocí dokumentace Java API a Google si najděte jak použít konstantu PI ktera se nachazi ve standartní kniovně v Javě. Hledejte třídu Math. https://docs.oracle.com/en/java/javase/17/docs/api/
+- [x] Hotovo
