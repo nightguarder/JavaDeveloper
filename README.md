@@ -117,6 +117,11 @@
 **Výstupy:**
 - Umíš používat různé smyčky a máš přehled o jejich aplikacích.
 
+**Úkoly:**
+- S pomocí cyklů napište metodu která na obrazovce vytiskne obdelník.
+- [ ] Deadline 16. Ledna
+- [Úkol Obdélník](/Lekce/Lekce6/Rectangle/src/)
+
 ---
 
 ## 7. Lekce: Úvod do polí (Arrays)
