@@ -1,16 +1,15 @@
-//
 //Pokud je metoda zavolána s neplatnými hodnotami, vytiskněte co je špatně a ukončete metody pomoci return.
 public class Rectangle {
     //While loop
     public static void printRectangleWhile(int height, int width) {
         if (height <= 0 || width <= 0) {
-            System.out.println("Invalid input. Height and width must be greater than 0.");
+            System.out.println("Nespravny vstup. Vyska a sirka musi byt vetsi nez 0.");
             return;
         }
-        //the size of Interger.MAX_VALUE is determined by the compiler
+        //the size of Interger.MAX_VALUE is determined by the Java language specification
         //https://stackoverflow.com/questions/15004944/max-value-of-integer#answer-15005226
         else if (height >= Integer.MAX_VALUE || width >= Integer.MAX_VALUE) {
-            System.out.println("Invalid input. Height and width must be less than INT_MAX.");
+            System.out.println("Nespravny vstup. Vyska a sirka musi byt mensi nez INT_MAX.");
             return;
         }
         else {
@@ -46,8 +45,6 @@ public class Rectangle {
             System.out.println("Nespravny vstup. Vyska a sirka musi byt vetsi nez 0.");
             return;
         }
-        //the size of Interger.MAX_VALUE is determined by the compiler
-        //https://stackoverflow.com/questions/15004944/max-value-of-integer#answer-15005226
         else if (height >= Integer.MAX_VALUE || width >= Integer.MAX_VALUE) {
             System.out.println("Nespravny vstup. Vyska a sirka musi byt mensi nez INT_MAX.");
             return;
