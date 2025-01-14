@@ -71,7 +71,6 @@ public class Rectangle {
                     }
                     System.out.print('\n');
                 }
-                //System.out.print('\n');
             }
         }
     } 
