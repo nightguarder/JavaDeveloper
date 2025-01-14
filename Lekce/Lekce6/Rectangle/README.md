@@ -15,11 +15,12 @@
 
 - Metoda bude mit dva parametry, vyska, sirka. 
 - V metodě pomocí podmínek ošetřete vstupní hodnoty tak aby dávaly smysl. Minimalní a maximální velikost zvolte podle sebe, tak aby Vám to vyhovovalo. 
-- Buďte jako James T. Kirk když upravil test Kobayashi Maru aby vyhrál.
+- Buďte jako James T. Kirk když upravil test Kobayashi Maru aby vyhrál. *? Neznam Star Trek jokes :/*
 - Pokud je metoda zavolána s neplatnými hodnotami, vytiskněte co je špatně a ukončete metody pomoci return.
 - Pokud si nevíte rady, zeptejte se na discord kanálu #homeworks případne mi pošlete DM zprávu na discord.
+
 ```java
-public static voit tiskniObdelnik(int vyska, int sirka) {
+public static void tiskniObdelnik(int vyska, int sirka) {
 	//Vase implementace.
 }
 ```
