@@ -119,7 +119,7 @@
 
 **Úkoly:**
 - S pomocí cyklů napište metodu která na obrazovce vytiskne obdelník.
-- [ ] Deadline 16. Ledna
+- [x] Deadline 16. Ledna
 - [Úkol Obdélník](/Lekce/Lekce6/Rectangle/src/Rectangle.java)
 **Bonus** Vytvořte pomocí cyklů jiný geometrický tvar a vytiskněte ho. 
 - [Bonus Trojúhelník](/Lekce/Lekce6/Rectangle/src/Triangle.java)
