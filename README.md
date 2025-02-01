@@ -87,7 +87,7 @@
 - Naprogramujte BMI kalkulačku.
 - Jelikož zatím neumíme načítat hodnoty zadávané uživatelem, nadefinujte v programu proměnné pro váhu a výšku a otestujte s různými hodnotami.
 - Proveďte výpočet BMI podle vzorce z [wikipedie](https://cs.wikipedia.org/wiki/Index_t%C4%9Blesn%C3%A9_hmotnosti)
-
+- *Bonus:* Naprogramujte jednoduchý program který na konzoli vypíše zdali je rok přestupný. [wikipedie](https://cs.wikipedia.org/wiki/Přestupný_rok)
 ---
 
 ## 5. Lekce: Metody a organizace kódu
