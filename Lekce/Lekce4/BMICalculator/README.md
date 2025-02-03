@@ -31,12 +31,3 @@
 - *Bonus:* Ošetřete vstupní hodnoty tak aby se nedala zadat například zaporná váha a výška. Vypište chybu na konzoli. Pro dřívější ukončení programu můžete použít příkaz return;
 - [x] Done
 
-### Výpočet přestupného roku
-- [ ] Done
-- Naprogramujte jednoduchý program který na konzoli vypíše zdali je rok přestupný.
-- Můžete zanedbat iregularitu jako rok 2000
-
-- *Bonus:* zkuste upravit program tak aby vypsal správne informace i pro roky 2000, 1900, 1800. Pro přesnější výpočet použijte definici z Wikipedie.
-
-- Bonusová část nemá na finalní hodnocení vliv. Je pouze pro vás, aby Vám protáhla vaše mozkové závity.A nebojte, nebude o taženém štrůdlu.
-
