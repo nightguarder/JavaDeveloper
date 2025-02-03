@@ -9,9 +9,9 @@
 - Bonusová část nemá na finalní hodnocení vliv. Je pouze pro vás, aby Vám protáhla vaše mozkové závity.A nebojte, nebude o taženém štrůdlu.
 
 ### Version 1
-- [První pokus](/src/LeapYear.java)
+- [První pokus](../LeapYear/src/LeapYear.java)
 ### Version 2
-- [Lepší verze](/src/LYImproved.java)
+- [Lepší verze](../LeapYear/src/LYImproved.java)
 ### Pseudocode
 - The pseudocode of this algorithm sould be like this:
 ```Java
