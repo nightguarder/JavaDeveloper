@@ -1,8 +1,8 @@
 ## Lekce 7 - Úkol
 
 **Vytvořte metody které na poli typu int[] :**
-- Vrátí index nejmenšího a - největšího prvku.
-- Vrátí součet, půměr, medián všech prvků pole.
+- Vrátí index nejmenšího a - největšího prvku. [Help](https://stackoverflow.com/questions/41380318/why-is-parallel-stream-slower)
+- Vrátí součet, půměr, medián všech prvků pole. [Help](https://stackoverflow.com/questions/11955728/how-to-calculate-the-median-of-an-array)
 - Vyhledá prvek v poli a vrátí jeho index. Pokud prvek není nalzen, vrátí -1. 
 
 ### Bonus
@@ -11,3 +11,42 @@
 ______
 - Program odevzdejte jako odkaz na GIT repozitář. Pro každý domací úkol používejte nový repozitář. Například pro ukol z lekce 7 odevzdejte v repozutari “úkol-7”.
 
+### Pseudocode
+
+```Java
+//Find SumAvgMedian integers int array[]
+//Nefunguje - median musí být double atd.
+public static int[] findSumAverageMedian(int[] arr) {
+        int sum = 0;
+        int len = arr.length;
+        
+        for (int i = 0; i < len; i++) 
+            sum += arr[i];
+        
+        int prumer = sum / len;
+        int median = 0;
+
+        if (len % 2 == 0) //delka pole je suda
+            median = (arr[len / 2] + arr[len / 2 - 1]) / 2;
+        else 
+            median = arr[len / 2];
+        
+        return new int[] {sum, prumer, median};
+    }
+//Find max and min integer int array[]
+int findMaxMin[int array[]]{
+    //initialize var
+    int len = array[].length;
+    int max = array[0];
+    int min = array[0];
+
+    //loop through array
+    for (int i = 1; i < len; i++){
+        if (int array[i] > max)
+            max = array[i] //update the max value
+        if (int array[i]< min)
+            min = array[i]
+    }
+    return (max, min);
+```
+}
