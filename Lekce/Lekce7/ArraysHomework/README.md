@@ -2,12 +2,16 @@
 
 **Vytvořte metody které na poli typu int[] :**
 - Vrátí index nejmenšího a - největšího prvku. [Help](https://stackoverflow.com/questions/41380318/why-is-parallel-stream-slower)
+    - [ArrayMinMax](src/ArrayMinMax.java)
 - Vrátí součet, půměr, medián všech prvků pole. [Help](https://stackoverflow.com/questions/11955728/how-to-calculate-the-median-of-an-array)
+    - [FindSumAvgMed](src/FindSumAvgMed.java)
 - Vyhledá prvek v poli a vrátí jeho index. Pokud prvek není nalzen, vrátí -1. 
+    - [FindKeyArray](src/FindKeyArray.java)
 
 ### Bonus
 - Vytvořte alternativní implementaci metody na hledaní prvku pomoci binarního hledaní (Binary Search). Takzvané půlení intervalu. 
 - Předpokládejte že pole je seřazené od nejmenšího do největšího prvku.
+- [What is binary Seacrch](https://www.baeldung.com/java-binary-search)
 ______
 - Program odevzdejte jako odkaz na GIT repozitář. Pro každý domací úkol používejte nový repozitář. Například pro ukol z lekce 7 odevzdejte v repozutari “úkol-7”.
 
@@ -49,4 +53,17 @@ int findMaxMin[int array[]]{
     }
     return (max, min);
 ```
-}
+### Bugs
+```Java
+Klic ke hledání: 99
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 100 out of bounds for length 100
+        at BinarySearch.binarySearch(BinarySearch.java:23)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.binarySearch(BinarySearch.java:30)
+        at BinarySearch.main(BinarySearch.java:48)
+```
