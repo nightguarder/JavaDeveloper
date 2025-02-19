@@ -1,4 +1,5 @@
 public class ArrayMinMax {
+    //Manual search for min and max
     //Array method - returns 2 integers, max and min
     public int[] findMinMax(int[] arr) {
         int len = arr.length;

@@ -45,6 +45,7 @@ public class FindSumAvgMed {
     
    //recursively find the nth element in the array
    //same as quicksort
+   //NENI MOJE TVORBA
     public static int quickNthEl(int arr[], int left, int right, int n){
         //base case
         if (left == right) 
@@ -63,6 +64,7 @@ public class FindSumAvgMed {
         
 
     }
+    //NENI MOJE TVORBA
     public static double FindMedian(int arr[]){
         int n = arr.length;
         int medianIndx = n / 2;
@@ -76,7 +78,8 @@ public class FindSumAvgMed {
         int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int nonSortedArr[] = {11, 22, 43, 54, 6, 1, 0, 103, 22, 10};
         double array[] = {3.14159, 1.112345, 3.3333, 4.44, 5.5};
-        double[] result = FindSumAvgMed(arr);
+        double[] result = FindSumAvgMed(nonSortedArr);
+
         System.out.println("Soucet: " + result[0] + ", Prumer: " + result[1] + ", Median: " + result[2]);
     }
     

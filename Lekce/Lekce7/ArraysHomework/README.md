@@ -12,14 +12,28 @@
 - Vytvořte alternativní implementaci metody na hledaní prvku pomoci binarního hledaní (Binary Search). Takzvané půlení intervalu. 
 - Předpokládejte že pole je seřazené od nejmenšího do největšího prvku.
 - [What is binary Seacrch](https://www.baeldung.com/java-binary-search)
+__Solution:__
+- [RecursiveBinSearch](src/RecursiveBinSearch.java)
 ______
 - Program odevzdejte jako odkaz na GIT repozitář. Pro každý domací úkol používejte nový repozitář. Například pro ukol z lekce 7 odevzdejte v repozutari “úkol-7”.
+
+### Tutorial
+__[Coding with John](https://www.youtube.com/watch?v=NFhOrxtXXcM)__
+1. Choose a *key* and *middle* of the array
+2. Binary starts at the *middle* of the array 
+    - it eliminates the half that is less <= to the chosen key.
+3. Select the other half that contains the key
+4. Choose the middle element of the other half
+5. Compare the *index* with the *key*
+    - if match return the index with the key
+    - if not return -1 (key is not in array)
+6. continue...
 
 ### Pseudocode
 
 ```Java
 //Find SumAvgMedian integers int array[]
-//Nefunguje - median musí být double atd.
+//Nefunguje - median musí bít double atd.
 public static int[] findSumAverageMedian(int[] arr) {
         int sum = 0;
         int len = arr.length;
