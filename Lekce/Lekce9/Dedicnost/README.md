@@ -42,7 +42,7 @@
 - [AbstractClass](/src/AbstractClass.java)
 
 ## Supertřída - Java.lang.Object
-- Všechny třídy v Javě implicitně dědí z java.lang.Object.
+- Všechny třídy v Javě implicitně dědí z [java.lang.Object](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html).
 - java.lang.Object poskytuje základní metody, které mohou být přepsány nebo využity.
 - **např.** 
     - toString()
@@ -53,6 +53,16 @@
     - clone(): Vytváří a vrací kopii objektu (vyžaduje implementaci Cloneable)
     - finalize(): Metoda volaná před zničením objektu (není doporučeno spoléhat na tuto metodu). Máme daleko lepší metody pro správu paměti
 
+**Příklad dědičnosti (java.lang.Object)**
+```java
+Class JTextField
+java.lang.Object
+    java.awt.Component
+        java.awt.Container
+            javax.swing.JComponent
+                javax.swing.text.JTextComponent
+                javax.swing.JTextField
+```
 
 ## Opakovani 
 - Co je to *konstruktor*? a klicove slovo *this*? *Getters*? *Setters*?
