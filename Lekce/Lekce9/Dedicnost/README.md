@@ -33,13 +33,27 @@
 
  ```
 
-## Abstranktní třída
+## Abstraktní třída
 - Neumožnuje vytvářet instance
 - Slouží jako typ pro reference.
 - Označena kličovým slovem abstract.
 - Může obsahovat abstraktní metody
      Vsichni kdo dědí z dané třídy *abstract* musí implementovat abstraktní metody
 - [AbstractClass](/src/AbstractClass.java)
+
+## Supertřída - Java.lang.Object
+- Všechny třídy v Javě implicitně dědí z java.lang.Object.
+- java.lang.Object poskytuje základní metody, které mohou být přepsány nebo využity.
+- **např.** 
+    - toString()
+    - equals(Object obj)
+    - hashCode()
+    - getClass() - *vrací instanci ktera popisuje informace tridy*
+- Metody které se nedoporučuje používat:
+    - clone(): Vytváří a vrací kopii objektu (vyžaduje implementaci Cloneable)
+    - finalize(): Metoda volaná před zničením objektu (není doporučeno spoléhat na tuto metodu). Máme daleko lepší metody pro správu paměti
+
+
 ## Opakovani 
 - Co je to *konstruktor*? a klicove slovo *this*? *Getters*? *Setters*?
 - [Lekce8](../../Lekce8/lekce8/README.md)
