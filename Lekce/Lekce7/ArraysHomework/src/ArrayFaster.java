@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+//NENI MOJE TVORBA
 public class ArrayFaster {
     public int[] paralellMaxMin(int[] arr) {
         int[] result = new int[2];

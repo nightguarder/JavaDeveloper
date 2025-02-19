@@ -13,23 +13,19 @@ public class BinarySearch {
         return true;
     }
     public static int binarySearch(int[] arr, int key, int left, int right) {
-        int mid = left + (right - left) / 2;
-        //stred pole[100] = 0 + (100-0)/2 = 50
-        //System.out.println("Posouvani na index(pivot): " + mid);
-
-        //base case
-        if (left > right)
-            return -1; //klic nenalezen
-
-        if (arr[mid] == key) //klic v stredu
-            return mid; 
-        if (arr[mid] > key) //klic je v levé polovine
+        //Recursive binary search
+        if (left > right) //1. if the pointers cross
+            return -1; //We didn't find the key
+        //2. continue the search
+        int mid = left + (right - left) / 2; //3. find the middle element
+        //4. compare the key with the middle element
+        if (key == arr[mid]) //4.1 if the key is equal to the middle element, return the index
+            return mid;
+        else if (key > arr[mid]) //4.2 if the key is greater than the middle element, go to the right
+            return binarySearch(arr, key, mid + 1, right);
+        else //4.3 if the key is less than the middle element, go to the left
             return binarySearch(arr, key, left, mid - 1);
-        else if (arr[mid] < key) //klic je v prave polovine
-            return binarySearch(arr, key, mid + 1, right); //
-        else //klic je na stredu
-            return mid; //klic nalezen na indexu
-        
+
     }
     public static void main(String[] args) {
         System.out.println("Program pro hledaní prvku v nahodnem poli pomoci Binárního Vyhledávacího stromu.");
@@ -55,6 +51,7 @@ public class BinarySearch {
             System.arraycopy(array, 0, arraySorted, 0, array.length);
             System.out.println("Serazené pole: " + java.util.Arrays.toString(arraySorted));
         }
+        //**left = 0, right = arraySorted.length - 1
         int res = binarySearch(arraySorted, key, 0, arraySorted.length - 1);
         if (res == -1) 
             System.out.println("Klic nenalezen");
