@@ -137,6 +137,8 @@
 
 **Praktické cvičení:** 
 - Najdi nejmenší a největší prvek v poli, spočítej průměr a medián, implementuj binární hledání.
+- [Average & Median](/Lekce/Lekce7/ArraysHomework/src/FindSumAvgMed.java)
+- [Binary Search recursive](/Lekce/Lekce7/ArraysHomework/src/RecursiveBinSearch.java)
 
 ---
 
@@ -149,6 +151,7 @@
 **Výstupy:**
 - Umíš vytvářet objekty, pracovat s konstruktorami a metodami, a chápeš základní principy objektově orientovaného programování.
 
+- [Konstruktory](/Lekce/Lekce8/lekce8/src/Konstruktor.java)
 ---
 
 ## 9. Lekce: OOP – dědičnost
@@ -159,6 +162,11 @@
 **Výstupy:**
 - Umíš používat dědičnost v Javě, rozpoznat a aplikovat přetížení a přepsání metod.
 
+- [Dědičnost "supertridy" Animal](/Lekce/Lekce9/Dedicnost/src/Dedicnost.java)
+
+- [Abstraktní třída](/Lekce/Lekce9/Dedicnost/src/AbstractClass.java)
+
+- [@Override class](/Lekce/Lekce9/Dedicnost/src/OVerrideClass.java)
 ---
 
 ## 10. Lekce: Polymorfismus a zapouzdření v OOP
