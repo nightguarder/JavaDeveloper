@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TutorialApplication<tutorial>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cyrils.tutorial.tutorial.TutorialApplication",
+            "projectName": "tutorial",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
