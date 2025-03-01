@@ -48,3 +48,30 @@
 - implementace více rozhraní - rozhraní je kompletně nezávisle na hierarchii dědění
     - interface Vozidlo --> interface Spotřeba --> class Auto
 - Řeší kdo má přístup k metodám v rozhraní a kdo je implementuje
+
+### Abstraktní třida
+- viz. [lekce9](../../Lekce9/Dedicnost/README.md)
+
+### super() - dědičnost
+- Zapouzdření je použití konstruktoru rodičovské třidy v potomkovi.
+- It calls the parent class constructor to initialize inherited fields before the child class adds its own stuff.
+- super (method1, method2) řiká javě:
+    - *"Use the contructor in the parent class to set up the method1 and method2 FIRST before building the object."*
+```java
+class RodicTrida {
+    private String name;
+    
+    public RodicTrida(String name) {
+        this.name = name; // Initialize parent's field
+    }
+}
+
+class PotomekTrida extends RodicTrida {
+    private int age;
+    
+    public PotomekTrida(String name, int age) {
+        super(name); // Initialize parent's "name" field FIRST
+        this.age = age; // Then initialize child's "age"
+    }
+}
+```
