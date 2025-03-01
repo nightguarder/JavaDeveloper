@@ -9,7 +9,7 @@
 
 **Polymorfismus:** 
 - Dědění umožňuje použití polymorfismu k přetížení nebo přepsání metod.
-- viz. dále [lekce10]()
+- viz. dále [lekce10](../../Lekce10/lekce10/README.md)
 
 ## Vyhody / Nevyhody
 - Java umožňuje dědit pouze z jednoho rodiče.
@@ -39,7 +39,9 @@
 - Označena kličovým slovem abstract.
 - Může obsahovat abstraktní metody
      Vsichni kdo dědí z dané třídy *abstract* musí implementovat abstraktní metody
-- [AbstractClass](/src/AbstractClass.java)
+- [AbstractClass](../../Lekce9/Dedicnost/src/AbstractClass.java)
+- // Subclass implementing the abstract method
+- [SubClass](../../Lekce9/Dedicnost/src/SubClass.java)
 
 ## Supertřída - Java.lang.Object
 - Všechny třídy v Javě implicitně dědí z [java.lang.Object](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/lang/Object.html).
