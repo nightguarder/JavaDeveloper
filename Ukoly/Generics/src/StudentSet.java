@@ -4,44 +4,59 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentSet {
-    private List <String> studenti = new ArrayList<>();
-    private List <String> kurzyList = new ArrayList<>();
-    public void addStudent(String student) {
+public class StudentSet<T> {
+    private List<T> studenti = new ArrayList<>(10);
+    private List<String> kurzyList = new ArrayList<>(10);
+    
+    public void addStudent(T student) {
         studenti.add(student);
     }
+    
     public void removeStudent(int index) {
         studenti.remove(index);
     }
+    
     public void addKurz(String kurz) {
         kurzyList.add(kurz);
     }
+    
     public void removeKurz(int index) {
         kurzyList.remove(index);
     }
+    
     public void printResult() {
         for (int i = 0; i < studenti.size(); i++) {
-            String student = studenti.get(i);
+            T student = studenti.get(i);
             System.out.println("Student " + student + " je zapsán v kurzu: " + kurzyList.get(i));
         }
     }
+    
     public static void main(String[] args) {
-        StudentSet studentSet = new StudentSet();
-        studentSet.addStudent("Petr");
-        studentSet.addStudent("Jana");
-        studentSet.addStudent("Karel");//odebereme Karla
+        // Using with String type
+        StudentSet<String> stringStudentSet = new StudentSet<>();
+        stringStudentSet.addStudent("Petr");
+        stringStudentSet.addStudent("Jana");
+        stringStudentSet.addStudent("Karel");
         
-        studentSet.removeStudent(2);//remove at index 2
-
-        //*zalezi na poradi? 
-        //ANO, zalezi na poradi, protoze se to uklada do dvou ruznych listu
-        //*studentSet.addKurz("Angličtina");
-        studentSet.addKurz("Matematika");
-        studentSet.addKurz("Fyzika");
-        studentSet.addKurz("Data Mining");
-
-        studentSet.removeKurz(2);//remove at index 2
-
-        studentSet.printResult();
+        stringStudentSet.removeStudent(2);
+        
+        stringStudentSet.addKurz("Matematika");
+        stringStudentSet.addKurz("Fyzika");
+        stringStudentSet.addKurz("Data Mining");
+        
+        stringStudentSet.removeKurz(2);
+        
+        stringStudentSet.printResult();
+        
+        // Example with Student class
+        System.out.println("\nPříklad se třídou Student:");
+        StudentSet<Student> studentStudentSet = new StudentSet<>();
+        studentStudentSet.addStudent(new Student("Petr", "Novák", 1995));
+        studentStudentSet.addStudent(new Student("Jana", "Veselá", 1998));
+        
+        studentStudentSet.addKurz("Matematika");
+        studentStudentSet.addKurz("Fyzika");
+        
+        studentStudentSet.printResult();
     }
 }
