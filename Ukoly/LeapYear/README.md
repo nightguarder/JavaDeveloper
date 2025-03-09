@@ -25,3 +25,35 @@ procedure leap_year(year)
 
 end procedure
 ```
+
+## Creating JAR 
+- If you want to share your App, compile the classes into Java *Jar* package.
+
+#### Step 1: Create a JAR from the classes
+1. Navigate to the src directory:
+   ```bash
+   cd src/com/cyrils/java/lekce4 
+   ```
+2. Compile the source files:
+   ```bash
+   javac -d ./outDir src/com/cyrils/java/lekce4/LYImproved.java
+   ```
+3. Create a JAR package:
+   ```bash
+   jar cvf LeapYear.jar -C ./outDir .
+   ```
+#### Step 2. Extract and compile the JAR in your new project
+ 1. Create directory in the /lib folder
+   ```bash
+   mkdir -p /Users/cyrils/Developer/Java/JavaDeveloper/Ukoly/Exceptions/lib
+   ```
+ 2. copy the JAR into the directory
+   ```bash
+   cp package.jar /Users/cyrils/Developer/Java/JavaDeveloper/Ukoly/Exceptions/lib/
+   ```
+ 3. Use the JAR in Your Exceptions Project
+ - Compile and run CheckLeapYear.java with the JAR in the classpath:
+   ```bash
+   # Compile
+   javac -d outDir -cp "lib/Package.jar" src/com/cyrils/java/lekce14/CheckLeapYear.java
+   
