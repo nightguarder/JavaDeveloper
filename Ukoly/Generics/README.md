@@ -15,6 +15,7 @@ Deadline: 19. 2. 2025
 4. Třídu z úkolu 3 použíjte v Množině Set a dokažte správné fungování metod hasCode a equeal. Například pokusem o vložení duplicit, případně odebráním prvku z množiny. Vysledek vytiskněte na obrazovku.
 
 *Bonus:* Zkuste zadaní vylepšit. Přemýšlejte co by se dalo udělat navíc a uveďte to v komentářích v kódu.
+- [StackOverflow answer](https://stackoverflow.com/questions/34486832/objects-equals-and-object-equals)
 ```java
 //metody equals by měly používat k porovnání Objects.equals pro Ošetření null hodnot v metodě equals pomocí Objects.equals()
 @Override
