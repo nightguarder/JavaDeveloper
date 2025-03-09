@@ -1,4 +1,7 @@
 //Vytvořte Třídu Student s parametry jmeno, prijmeni, rokNarozeni. Implementujte metody hashCode a equals. 
+
+import java.util.Objects;
+
 public class Student {
     String jmeno;
     String prijmeni;
@@ -35,11 +38,7 @@ public class Student {
         if (this == student) return true;
         if (student == null || getClass() != student.getClass()) return false;
         Student other = (Student) student;
-        return rokNarozeni == other.rokNarozeni 
-            && jmeno.equals(other.jmeno) 
-            && prijmeni.equals(other.prijmeni);
+        return rokNarozeni == other.rokNarozeni && Objects.equals(jmeno, other.jmeno) && Objects.equals(prijmeni, other.prijmeni);
     }
-    public String toString() {
-        return jmeno + " " + prijmeni + " " + rokNarozeni;
-    }
+    
 }
