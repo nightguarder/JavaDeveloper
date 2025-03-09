@@ -30,6 +30,6 @@ public class IllegalAgeException extends Exception implements CustomExceptions {
     }
     @Override
     public String getDetails() {
-        return "Neplatný věk!";
+        return "Zadaný věk je neplatný!";
     }
 }

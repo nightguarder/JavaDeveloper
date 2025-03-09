@@ -13,7 +13,7 @@ public class Main {
         try {
             CheckLeapYear.isYearLeap(2500); //throws exception
         } catch (InvalidYearException e) {
-            System.out.println("Error code: " + e.getErrorCode()); //YEAR_NOT_VALID_01
+            System.out.println("Error code: " + e.getErrorCode()); //YEAR_NOT_VALID
             System.out.println("Details: " + e.getDetails());
             if (e.isRecoverable()) {
                 System.out.println("Recoverable error, try again.");
