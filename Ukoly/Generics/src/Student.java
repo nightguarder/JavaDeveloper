@@ -15,8 +15,7 @@ public class Student {
         return jmeno.hashCode() + prijmeni.hashCode() + rokNarozeni;
     }
     //metoda equals aby porovnala dva objekty
-    @Override
-    public boolean equals(Object student) {
+    public boolean equalsNormal(Object student) {
         //pokud je reference this a student stejna
         if (this == student) 
             return true;
@@ -31,8 +30,8 @@ public class Student {
     }
     //Bonus: lepší metoda equals
     //používat k porovnání Objects.equals pro Ošetření null hodnot stringu a proměnných
-    //@Override
-    public boolean equalsBetter(Object student) {
+    @Override
+    public boolean equals(Object student) {
         if (this == student) return true;
         if (student == null || getClass() != student.getClass()) return false;
         Student other = (Student) student;
