@@ -3,6 +3,8 @@ import java.util.Set;
 
 public class Students {
     private static void printSet(Set<Student> studenti) {
+        //pouziti forEach cyklu
+        //klic student je promenna, ktera se pouziva pro kazdy prvek v mnozine
         for (Student student : studenti) {
             System.out.println(student);
         }
