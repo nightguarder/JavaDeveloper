@@ -1,6 +1,6 @@
 package com.cyrils.java.lekce14;
 
-//Dědí z java.lang.Exception a implementuje CustomExceptions
+//Dědí z java.lang.Exception a implementuje CustomExceptions interface
 public class IllegalAgeException extends Exception implements CustomExceptions {
     public IllegalAgeException(String message) {
         super(message);
