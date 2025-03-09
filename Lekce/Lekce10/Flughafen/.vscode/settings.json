@@ -3,6 +3,7 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
+<<<<<<< HEAD
     ],
     "files.exclude": {
         "**/.git": true,
@@ -12,4 +13,7 @@
         "**/.DS_Store": true,
         "**/Thumbs.db": true
     }
+=======
+    ]
+>>>>>>> 24e9eb3 (Lekce 10 done)
 }
