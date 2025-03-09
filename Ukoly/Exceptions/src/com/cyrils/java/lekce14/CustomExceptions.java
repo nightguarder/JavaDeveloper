@@ -1,5 +1,5 @@
 package com.cyrils.java.lekce14;
-
+//interface pro IllegalAgeException a InvalidYearException
 public interface CustomExceptions {
     //abstract method
      //return Machine-readable error code 
