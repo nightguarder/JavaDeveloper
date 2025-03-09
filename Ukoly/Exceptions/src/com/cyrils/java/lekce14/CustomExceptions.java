@@ -9,4 +9,8 @@ public interface CustomExceptions {
     //return original exception message
     String getOriginalMessage();
     
+    //Je moznost zotaveni z vyjimky?
+    default boolean isRecoverable() {
+        return true; //vychozi hodnota
+    }
 }
