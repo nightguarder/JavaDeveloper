@@ -6,9 +6,7 @@ public class Main {
         try {
             CheckAge.ageValidation(17); //throws exception
         } catch (IllegalAgeException e) {
-            System.out.println("Error code: " + e.getErrorCode()); //AGE_NOT_VALID_01
-            System.out.println("Details: " + e.getDetails());
-            System.out.println("Original message: " + e.getOriginalMessage());
+            System.out.println("Error code: " + e.getErrorCode());
         }
         System.out.println("\n");
         System.out.println("2. Year Validation using runtime InvalidYearException");
@@ -17,7 +15,11 @@ public class Main {
         } catch (InvalidYearException e) {
             System.out.println("Error code: " + e.getErrorCode()); //YEAR_NOT_VALID_01
             System.out.println("Details: " + e.getDetails());
-            System.out.println("Original message: " + e.getOriginalMessage());
+            if (e.isRecoverable()) {
+                System.out.println("Recoverable error, try again.");
+            } else {
+                System.out.println("Unrecoverable error, exiting.");
+            }
         }
     }
 }
