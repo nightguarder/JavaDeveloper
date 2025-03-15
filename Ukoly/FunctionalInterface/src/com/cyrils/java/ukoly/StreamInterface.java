@@ -4,5 +4,5 @@ import java.util.List;
 
 @FunctionalInterface
 public interface StreamInterface {
-    abstract int run(List<Integer> numbers);
+    abstract int run(List<Long> numbers);
 }

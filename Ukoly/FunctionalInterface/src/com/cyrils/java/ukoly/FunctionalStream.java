@@ -6,41 +6,45 @@ import java.util.stream.Stream;
 
 public class FunctionalStream {
 
-    // Use BIgInteger to avoid integer overflow
+    // Use BigInteger to avoid integer overflow
     @FunctionalInterface
     interface BigIntegerOperation {
-        BigInteger compute(List<Integer> numbers);
+        BigInteger run(List<Long> numbers);
     }
 
     //use stream to generate unlimited numbers n%4 == 0
     public static void main(String[] args) {
-                //generate unlimited numbers
-        List <Integer> numbers = Stream.iterate(4, n -> n + 1) //vynechat 0
+        //generate unlimited numbers
+        List <Long> numbers = NekonecnyStream.infiniteStream()
             .filter(n -> n % 4 == 0)
-            .limit(100) //prvních 100
+            .limit(100)
             .collect(Collectors.toList());
             
             System.out.println("Počet čísel v seznamu: " + numbers.size());
             //System.out.println("Prvních 100 čísel dělitelných 4:");
 
-            /* for (Integer number : numbers) {
-                System.out.println(number);
-            } */
+        // Print first 100 to verify what we're working with
+        numbers.stream().limit(100).forEach(n -> System.out.print(n + " "));
+            System.out.println("...");
 
         //Test
         //Součet (Σ) 
-        StreamInterface sum = list -> list.stream().mapToInt(Integer::intValue).sum();
+        StreamInterface sum = list -> list.stream().mapToInt(Long::intValue).sum();
         System.out.println("Součet (Σ): " + sum.run(numbers));
 
         //Součin (∏)
-        //?ChatGPT:
-        //?there's a risk of integer overflow with large numbers. If this occurs, you might need to use BigInteger instead.
-        /* StreamInterface product = list -> list.stream().reduce(1, (a, b) -> a * b);
-        System.out.println("Součin (∏): " + product.run(numbers)); */
-        BigIntegerOperation product = list -> list.stream().map(BigInteger::valueOf).reduce(BigInteger.ONE, BigInteger::multiply);
-        System.out.println("Součin (∏): " + product.compute(numbers));
+        // Fix: Change the interface to work with BigInteger to avoid integer overflow
+        BigIntegerOperation product = list -> {
+            BigInteger result = BigInteger.ONE;
+            for (Long num : list) {
+                result = result.multiply(BigInteger.valueOf(num));
+            }
+            return result;
+        };
+        System.out.println("Součin (∏): " + product.run(numbers));
+        
         //Průměr (x̄)
-        StreamInterface average = list -> (int) list.stream().mapToInt(Integer::intValue).average().orElse(0);
+        StreamInterface average = list -> (int) list.stream().mapToInt(Long::intValue).average().orElse(0);
         System.out.println("Průměr (x̄): " + average.run(numbers));
     }
 }
