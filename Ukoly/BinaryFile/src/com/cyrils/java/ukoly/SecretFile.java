@@ -67,16 +67,16 @@ public class SecretFile {
             String validEncoding = ConvertFileEncodings.findValidEncoding(binaryData, ENCODINGS);
             
             if (validEncoding != null) {
-                System.out.println("Použité kódování: " + validEncoding);
+                System.out.println("Nalezeno platné kódování: " + validEncoding);
                 // If we found a valid encoding, save the converted file
                 boolean saved = ConvertFileEncodings.saveConvertedFile(binaryData, outputFilename, validEncoding);
                 if (saved) {
-                    System.out.println("File " + outputFilename + " was successfully created using encoding " + validEncoding);
+                    System.out.println("Soubor " + outputFilename + " byl úspěšně vytvořen s kódováním " + validEncoding);
                 } else {
-                    System.out.println("Failed to save file " + outputFilename);
+                    System.out.println("Nepodařilo se uložit soubor " + outputFilename);
                 }
             } else {
-                System.out.println("No valid encoding found for file " + inputFilename);
+                System.out.println("Pro soubor " + inputFilename + " nebylo nalezeno žádné platné kódování");
             }
         } catch (IOException e) {
             System.err.println("Chyba při čtení nebo zápisu souboru: " + e.getMessage());

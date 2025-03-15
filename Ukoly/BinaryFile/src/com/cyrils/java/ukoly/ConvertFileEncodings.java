@@ -20,6 +20,7 @@ public class ConvertFileEncodings {
     public static String findValidEncoding(byte[] binaryData, List<String> encodings) {
         for (String encoding : encodings) {
             try {
+                System.out.println("Testování kódování: " + encoding);
                 String decodedText = new String(binaryData, encoding);
                 // Check if the decoded text contains valid characters
                 String preview = decodedText.length() > 200 ? 
@@ -33,20 +34,21 @@ public class ConvertFileEncodings {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
                 String answer = reader.readLine().trim().toLowerCase();
                 if (answer.equals("ano")) {
-                    // Found a valid encoding
-                    // Don't try to get the encoding name from Charset.availableCharsets() as that's a different list
-                    // Just return the current encoding we're testing
-                    System.out.println("Found valid encoding: " + encoding);
+                    // Return the current encoding being tested without printing a message
+                    // This avoids the duplicate "Found valid encoding" messages
                     return encoding; 
                 }
                 // If the user answers "ne", try the next encoding
                 else if (answer.equals("ne")) {
-                    System.out.println("Další pokus s kódováním: " + encoding);
+                    System.out.println("Další pokus s kódováním...");
                 }
                 else {
                     System.out.println("Neplatná odpověď. Zkuste to znovu.");
+                    // If invalid answer, retry the same encoding
+                    // This is optional - you could also just continue to the next one
                 }
             } catch (Exception e) {
+                System.out.println("Chyba při testování kódování " + encoding + ": " + e.getMessage());
                 // If this encoding fails, just try the next one
                 continue;
             }
