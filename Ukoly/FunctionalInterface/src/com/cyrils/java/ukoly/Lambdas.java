@@ -10,22 +10,27 @@ public class Lambdas {
      MatematickeOperace nasobeni = (a, b) -> a * b;  
      
      //Anonymni trida deleni
-     MatematickeOperace deleni = new MatematickeOperace() {
+     /* MatematickeOperace deleni = new MatematickeOperace() {
          @Override
          public int apply(int a, int b) {
             //kontrola deleni nulou
-            if (b == 0) {
+            if (b == 0) 
                 throw new IllegalArgumentException("Nelze delit nulou!");
-            }
+            
              return a / b;
          }
+     }; */
+     MatematickeOperace modulo = (a, b) -> {
+         if (b == 0) 
+            throw new IllegalArgumentException("Nelze delit nulou!");
+         return a % b;
      };
 
      //Test
      System.out.println("1 + 2 = " + scitani.apply(1, 2));
      System.out.println("1 - 2 = " + odcitani.apply(1, 2));
      System.out.println("1 * 2 = " + nasobeni.apply(1, 2));
-     System.out.println("1 / 2 = " + deleni.apply(1, 2));
-     System.out.println("1 / 0 = " + deleni.apply(1, 0));
+     System.out.println("1 / 2 = " + modulo.apply(1, 2));
+     System.out.println("1 / 0 = " + modulo.apply(1, 0));
     }
 }
