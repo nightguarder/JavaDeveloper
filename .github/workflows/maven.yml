@@ -12,18 +12,22 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'Projects/Maven/unittesting/**'
+      - Projects/Maven/unittesting/**
       - Projects/Maven/unittesting/pom.xml
   pull_request:
     branches: [ "main" ]
     paths:
-      - 'Projects/Maven/unittesting/**'
+      - Projects/Maven/unittesting/**
       - Projects/Maven/unittesting/pom.xml
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Projects/Maven/unittesting
 
 
     steps:
@@ -39,7 +43,7 @@ jobs:
         echo "Current directory: $(pwd)"
         echo "Repository contents:"
         ls -la
-        mvn -B package --file Projects/Maven/unittesting/pom.xml
+        mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
