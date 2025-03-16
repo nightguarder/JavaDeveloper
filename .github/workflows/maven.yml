@@ -11,13 +11,22 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - "Projects/Maven/unittesting/src/**"
+      - "Projects/Maven/unittesting/pom.xml"
   pull_request:
     branches: [ "main" ]
+    paths:
+      - "Projects/Maven/unittesting/src/**"
 
 jobs:
   build:
 
     runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Projects/Maven/unittesting
 
     steps:
     - uses: actions/checkout@v4
