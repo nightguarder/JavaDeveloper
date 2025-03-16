@@ -6,18 +6,21 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Check Age Test Maven CI
 
 on:
   push:
     branches: [ "main" ]
     paths:
-      - "Projects/Maven/unittesting/src/**"
-      - "Projects/Maven/unittesting/pom.xml"
+      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/CheckAgeTest.java
+      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/**
+      - Projects/Maven/unittesting/pom.xml
   pull_request:
     branches: [ "main" ]
     paths:
-      - "Projects/Maven/unittesting/src/**"
+      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/CheckAgeTest.java
+      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/**
+      - Projects/Maven/unittesting/pom.xml
 
 jobs:
   build:
