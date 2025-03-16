@@ -1,7 +1,6 @@
 package com.cyrils.projects.maven;
 
-import com.cyrils.java.lekce14.*;
-
+import com.cyrils.java.lekce14.CheckAge;
 public class Main {
     public static void main(String[] args) {
         //Test using the class from the other module
