@@ -22,11 +22,9 @@ public class WriterThreader extends Thread {
             writer.write(jsonMessage);
             writer.write("\n"); 
             writer.flush();
-            //create a new message
-            message = new Message(MessageType.WARNING, "Second test", "Cyril", "Everyone");
-            //serialize the message
+            //try the command
+            message = new Message(MessageType.COMMAND, "konec", "Cyril", "Everyone");
             jsonMessage = MessageSerialization.serialize(message);
-            //write the message to the writer
             writer.write(jsonMessage);
             writer.write("\n");
             writer.flush();
