@@ -25,9 +25,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: Projects/Maven/unittesting
 
     steps:
     - uses: actions/checkout@v4
@@ -42,7 +39,7 @@ jobs:
         echo "Current directory: $(pwd)"
         echo "Repository contents:"
         ls -la
-        mvn -B package --file pom.xml 
+        mvn -B package --file Projects/Maven/unittesting/pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
