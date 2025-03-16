@@ -13,21 +13,15 @@ on:
     branches: [ "main" ]
     paths:
       - Projects/Maven/unittesting/**
-      - Projects/Maven/unittesting/pom.xml
   pull_request:
     branches: [ "main" ]
     paths:
       - Projects/Maven/unittesting/**
-      - Projects/Maven/unittesting/pom.xml
   workflow_dispatch:
 jobs:
   build:
 
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: Projects/Maven/unittesting
 
 
     steps:
@@ -40,8 +34,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: | 
+        cd Projects/Maven/unittesting
         echo "Current directory: $(pwd)"
-        echo "Repository contents:"
+        echo "Directory contents:"
         ls -la
         mvn -B package --file pom.xml
 
