@@ -8,7 +8,7 @@ public class CheckAge {
      */
     public static boolean ageValidation(int age) throws IllegalAgeException {
         if (age < 18) 
-            throw new IllegalAgeException("Věk " + age + " je pod hranicí 18 let"); //vyhození výjimky
+            throw new IllegalAgeException("Věk " + age + " is not valid"); //vyhození výjimky
         else
             System.out.println("Věk " + age + " je v pořádku");
         return true;

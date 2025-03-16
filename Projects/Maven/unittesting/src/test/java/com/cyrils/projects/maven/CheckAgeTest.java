@@ -21,7 +21,7 @@ class CheckAgeTest {
     }
 
     @Test
-    @DisplayName("Age validation should throw exception for under 18")
+    @DisplayName("Age validation should throw exception if age is under 18")
     void ageValidationShouldThrowExceptionForInvalidAge() {
         // Exception should be thrown for age < 18
         Exception exception = assertThrows(Exception.class, () -> CheckAge.ageValidation(17));
@@ -31,6 +31,7 @@ class CheckAgeTest {
         assertThrows(Exception.class, () -> CheckAge.ageValidation(-1));
     }
 
+    //Testing with parameterized tests
     @ParameterizedTest
     @ValueSource(ints = {18, 20, 65, 100})
     @DisplayName("Age validation should pass for various valid ages")
