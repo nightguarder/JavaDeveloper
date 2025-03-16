@@ -18,12 +18,15 @@ public class ReaderThread extends Thread {
 
             while ((msg = bufferReader.readLine()) != null) {
                 if (msg.equals("konec")) 
+                {
+                    System.out.println("Received termination message...\n \n");
                     break;
+                }
                 System.out.println("Received message: " + msg);
             }
             bufferReader.close(); //?StreameReader is closed automatically with try-catch
             System.out.println("ReaderThread has ended");
-            
+
         } catch (IOException e) {
             System.out.println("ReaderThread error:" + e.getMessage());
             e.printStackTrace();
