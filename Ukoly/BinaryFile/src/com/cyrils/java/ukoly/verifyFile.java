@@ -23,6 +23,7 @@ public class verifyFile {
             if(hex.length() == 1) hexString.append('0');
             hexString.append(hex);
         }
+        //back to string
         String convertedHash = hexString.toString();
         System.out.println("Vypočítaný hash: " + convertedHash);
         System.out.println("Očekávaný hash:  " + expectedHash);

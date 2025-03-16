@@ -1,6 +1,7 @@
 package com.cyrils.java.ukoly;
 
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
@@ -45,6 +46,7 @@ public class ConvertFileEncodings {
                 else {
                     System.out.println("Neplatná odpověď. Zkuste to znovu.");
                     // If invalid answer, retry the same encoding
+                    break;
                     // This is optional - you could also just continue to the next one
                 }
             } catch (Exception e) {
@@ -62,7 +64,9 @@ public class ConvertFileEncodings {
             String decodedText = new String(binaryData, encoding);
             Path outputPath = Paths.get(outputFilename);
             // Save the decoded text using UTF-8 encoding
-            Files.write(outputPath, decodedText.getBytes("UTF-8"));
+            //if file already exists, it will be overwritten
+            Files.write(outputPath, decodedText.getBytes(Charset.forName("UTF-8")));
+            System.out.println("Soubor byl úspěšně uložen: " + outputFilename);
             return true;
         } catch (IOException e) {
             System.err.println("Error saving converted file: " + e.getMessage());

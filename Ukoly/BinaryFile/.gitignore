@@ -33,3 +33,4 @@ replay_pid*
 .vscode/
 .env
 /assets/output/*
+*tajny.txt

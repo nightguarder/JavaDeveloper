@@ -24,5 +24,5 @@ Get-FileHash -Path .\dopis.bin
 ```
 - Ověření kontrolního součtu v MacOS terminal : 
 ```zsh
-openssl dgst -sha256 dopis.bin
+shasum -a 256 dopis.bin 
 ```
