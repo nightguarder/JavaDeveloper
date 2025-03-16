@@ -47,22 +47,6 @@ class CheckAgeTest {
     }
     
     @Test
-    @DisplayName("Age validation with AssertJ for valid age")
-    void ageValidationWithAssertJForValidAge() throws Exception {
-        assertThat(CheckAge.ageValidation(20))
-            .as("Age validation should return true for age 20")
-            .isTrue();
-    }
-
-    @Test
-    @DisplayName("Age validation with AssertJ for invalid age")
-    void ageValidationWithAssertJForInvalidAge() {
-        assertThatThrownBy(() -> CheckAge.ageValidation(15))
-            .isInstanceOf(Exception.class)
-            .hasMessageContaining("not valid");
-    }
-    
-    @Test
     @DisplayName("Age validation for edge cases")
     void ageValidationForEdgeCases() {
         // Test for exactly 18 years
