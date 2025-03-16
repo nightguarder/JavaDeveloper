@@ -12,14 +12,12 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/CheckAgeTest.java
-      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/**
+      - 'Projects/Maven/unittesting/**'
       - Projects/Maven/unittesting/pom.xml
   pull_request:
     branches: [ "main" ]
     paths:
-      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/CheckAgeTest.java
-      - Projects/Maven/unittesting/src/test/java/com/cyrils/projects/maven/**
+      - 'Projects/Maven/unittesting/**'
       - Projects/Maven/unittesting/pom.xml
 
 jobs:
@@ -40,7 +38,11 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: | 
+        mvn -B package --file pom.xml 
+        echo "Current directory: $(pwd)"
+        echo "Repository contents:"
+        ls -la
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
