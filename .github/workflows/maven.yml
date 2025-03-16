@@ -19,7 +19,7 @@ on:
     paths:
       - Projects/Maven/unittesting/**
       - Projects/Maven/unittesting/pom.xml
-
+  workflow_dispatch:
 jobs:
   build:
 
